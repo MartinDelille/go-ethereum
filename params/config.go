@@ -73,10 +73,10 @@ var (
 	// TestnetTrustedCheckpoint contains the light client trusted checkpoint for the Ropsten test network.
 	TestnetTrustedCheckpoint = &TrustedCheckpoint{
 		Name:         "testnet",
-		SectionIndex: 136,
-		SectionHead:  common.HexToHash("0xe5d80bb08d92bbc12dfe510c64cba01eafcbb4ba585e7c7ab7f8a93c6f295ab3"),
-		CHTRoot:      common.HexToHash("0xe3ca77ab0cb51eec74f4f7458e36aee207c68768387b39cb0bcff0940a6264d8"),
-		BloomRoot:    common.HexToHash("0x30c8eeadac5539d3dcd6e88915d1a07cb2f3a1d6ebe7e553e3ee783c04c68c2d"),
+		SectionIndex: 139,
+		SectionHead:  common.HexToHash("0x9fad89a5e3b993c8339b9cf2cbbeb72cd08774ea6b71b105b3dd880420c618f4"),
+		CHTRoot:      common.HexToHash("0xc815833881989c5d2035147e1a79a33d22cbc5313e104ff01e6ab405bd28b317"),
+		BloomRoot:    common.HexToHash("0xd94ee9f3c480858f53ec5d059aebdbb2e8d904702f100875ee59ec5f366e841d"),
 	}
 
 	// RinkebyChainConfig contains the chain parameters to run a node on the Rinkeby test network.
@@ -90,7 +90,7 @@ var (
 		EIP155Block:         big.NewInt(3),
 		EIP158Block:         big.NewInt(3),
 		ByzantiumBlock:      big.NewInt(1035301),
-		ConstantinopleBlock: nil,
+		ConstantinopleBlock: big.NewInt(3660663),
 		Clique: &CliqueConfig{
 			Period: 15,
 			Epoch:  30000,
